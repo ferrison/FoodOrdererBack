@@ -6,7 +6,7 @@ from main_app.models import Food, Order, FoodItem
 class FoodSerializer(serializers.ModelSerializer):
     class Meta:
         model = Food
-        fields = ['id', 'name', 'ingredients', 'price']
+        fields = ['id', 'image', 'name', 'ingredients', 'price']
 
 
 class FoodViewSet(viewsets.ModelViewSet):
